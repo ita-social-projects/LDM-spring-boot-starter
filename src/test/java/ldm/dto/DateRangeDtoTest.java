@@ -1,7 +1,7 @@
 package ldm.dto;
 
-import com.ivan.softserve.ldm.dto.DateRangeDto;
-import com.ivan.softserve.ldm.exception.exceptions.BadRequestException;
+import com.softserve.ldm.dto.DateRangeDto;
+import com.softserve.ldm.exception.exceptions.BadRequestException;
 import org.junit.jupiter.api.Test;
 
 import java.time.LocalDateTime;

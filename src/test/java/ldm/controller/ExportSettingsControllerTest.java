@@ -1,16 +1,16 @@
 package ldm.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.ivan.softserve.ldm.config.CustomPageableHandlerMethodArgumentResolver;
-import com.ivan.softserve.ldm.constant.ErrorMessage;
-import com.ivan.softserve.ldm.controller.ExportSettingsController;
-import com.ivan.softserve.ldm.dto.PageableAdvancedDto;
-import com.ivan.softserve.ldm.dto.EnvironmentDto;
-import com.ivan.softserve.ldm.dto.TableParamsRequestDto;
-import com.ivan.softserve.ldm.dto.TablesMetadataDto;
-import com.ivan.softserve.ldm.exception.exceptions.DatabaseMetadataException;
-import com.ivan.softserve.ldm.exception.handler.LdmExceptionHandler;
-import com.ivan.softserve.ldm.service.ExportSettingsService;
+import com.softserve.ldm.config.CustomPageableHandlerMethodArgumentResolver;
+import com.softserve.ldm.constant.ErrorMessage;
+import com.softserve.ldm.controller.ExportSettingsController;
+import com.softserve.ldm.dto.PageableAdvancedDto;
+import com.softserve.ldm.dto.EnvironmentDto;
+import com.softserve.ldm.dto.TableParamsRequestDto;
+import com.softserve.ldm.dto.TablesMetadataDto;
+import com.softserve.ldm.exception.exceptions.DatabaseMetadataException;
+import com.softserve.ldm.exception.handler.LdmExceptionHandler;
+import com.softserve.ldm.service.ExportSettingsService;
 import ldm.ModelUtils;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

@@ -1,8 +1,8 @@
 package ldm.service;
 
-import com.ivan.softserve.ldm.exception.exceptions.BadSecretKeyException;
-import com.ivan.softserve.ldm.exception.exceptions.FunctionalityNotAvailableException;
-import com.ivan.softserve.ldm.service.impl.DotenvServiceImpl;
+import com.softserve.ldm.exception.exceptions.BadSecretKeyException;
+import com.softserve.ldm.exception.exceptions.FunctionalityNotAvailableException;
+import com.softserve.ldm.service.impl.DotenvServiceImpl;
 import io.github.cdimascio.dotenv.Dotenv;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

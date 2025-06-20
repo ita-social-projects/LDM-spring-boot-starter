@@ -1,9 +1,9 @@
 package ldm.repository;
 
-import com.ivan.softserve.ldm.dto.TableRowsDto;
-import com.ivan.softserve.ldm.dto.TablesMetadataDto;
-import com.ivan.softserve.ldm.exception.exceptions.DatabaseMetadataException;
-import com.ivan.softserve.ldm.repository.impl.ExportSettingsRepoImpl;
+import com.softserve.ldm.dto.TableRowsDto;
+import com.softserve.ldm.dto.TablesMetadataDto;
+import com.softserve.ldm.exception.exceptions.DatabaseMetadataException;
+import com.softserve.ldm.repository.impl.ExportSettingsRepoImpl;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
