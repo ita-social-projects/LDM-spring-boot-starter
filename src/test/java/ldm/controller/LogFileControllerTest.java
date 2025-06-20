@@ -1,10 +1,10 @@
 package ldm.controller;
 
-import com.ivan.softserve.ldm.controller.LogFileController;
-import com.ivan.softserve.ldm.dto.LogFileFilterDto;
-import com.ivan.softserve.ldm.exception.handler.LdmExceptionHandler;
-import com.ivan.softserve.ldm.service.DotenvService;
-import com.ivan.softserve.ldm.service.LogFileService;
+import com.softserve.ldm.controller.LogFileController;
+import com.softserve.ldm.dto.LogFileFilterDto;
+import com.softserve.ldm.exception.handler.LdmExceptionHandler;
+import com.softserve.ldm.service.DotenvService;
+import com.softserve.ldm.service.LogFileService;
 import ldm.ModelUtils;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

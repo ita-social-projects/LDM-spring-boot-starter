@@ -1,14 +1,14 @@
 package ldm.service;
 
-import com.ivan.softserve.ldm.dto.PageableAdvancedDto;
-import com.ivan.softserve.ldm.dto.EnvironmentDto;
-import com.ivan.softserve.ldm.dto.TableParamsRequestDto;
-import com.ivan.softserve.ldm.dto.TableRowsDto;
-import com.ivan.softserve.ldm.dto.TablesMetadataDto;
-import com.ivan.softserve.ldm.repository.ExportSettingsRepo;
-import com.ivan.softserve.ldm.service.DotenvService;
-import com.ivan.softserve.ldm.service.impl.ExportSettingsServiceImpl;
-import com.ivan.softserve.ldm.service.ExportToFileService;
+import com.softserve.ldm.dto.PageableAdvancedDto;
+import com.softserve.ldm.dto.EnvironmentDto;
+import com.softserve.ldm.dto.TableParamsRequestDto;
+import com.softserve.ldm.dto.TableRowsDto;
+import com.softserve.ldm.dto.TablesMetadataDto;
+import com.softserve.ldm.repository.ExportSettingsRepo;
+import com.softserve.ldm.service.DotenvService;
+import com.softserve.ldm.service.impl.ExportSettingsServiceImpl;
+import com.softserve.ldm.service.ExportToFileService;
 import ldm.ModelUtils;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

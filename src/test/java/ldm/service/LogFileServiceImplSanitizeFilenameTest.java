@@ -1,7 +1,7 @@
 package ldm.service;
 
-import com.ivan.softserve.ldm.service.DotenvService;
-import com.ivan.softserve.ldm.service.impl.LogFileServiceImpl;
+import com.softserve.ldm.service.DotenvService;
+import com.softserve.ldm.service.impl.LogFileServiceImpl;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;

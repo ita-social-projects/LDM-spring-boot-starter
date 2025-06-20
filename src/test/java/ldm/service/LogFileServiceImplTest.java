@@ -1,13 +1,13 @@
 package ldm.service;
 
-import com.ivan.softserve.ldm.constant.ErrorMessage;
-import com.ivan.softserve.ldm.dto.PageableDto;
-import com.ivan.softserve.ldm.dto.LogFileMetadataDto;
-import com.ivan.softserve.ldm.dto.LogFileFilterDto;
-import com.ivan.softserve.ldm.exception.exceptions.FileReadException;
-import com.ivan.softserve.ldm.exception.exceptions.NotFoundException;
-import com.ivan.softserve.ldm.service.DotenvService;
-import com.ivan.softserve.ldm.service.impl.LogFileServiceImpl;
+import com.softserve.ldm.constant.ErrorMessage;
+import com.softserve.ldm.dto.PageableDto;
+import com.softserve.ldm.dto.LogFileMetadataDto;
+import com.softserve.ldm.dto.LogFileFilterDto;
+import com.softserve.ldm.exception.exceptions.FileReadException;
+import com.softserve.ldm.exception.exceptions.NotFoundException;
+import com.softserve.ldm.service.DotenvService;
+import com.softserve.ldm.service.impl.LogFileServiceImpl;
 import ldm.ModelUtils;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

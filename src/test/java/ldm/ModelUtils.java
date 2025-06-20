@@ -1,7 +1,6 @@
 package ldm;
 
-import com.ivan.softserve.ldm.dto.*;
-import com.ivan.softserve.ldm.dto.ByteSizeRangeDto;
+import com.softserve.ldm.dto.*;
 import org.springframework.boot.logging.LogLevel;
 
 import java.util.*;
