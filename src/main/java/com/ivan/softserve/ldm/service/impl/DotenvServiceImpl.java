@@ -35,7 +35,7 @@ public class DotenvServiceImpl implements DotenvService {
         String actualKey = dotenv.get("logs.secretKey");
 
         if (actualKey == null || !passwordEncoder.matches(secretKey, actualKey)) {
-            throw new BadSecretKeyException(ErrorMessage.BAD_SECRET_KEY + " Secret key " + actualKey + " does not match " + secretKey + ".");
+            throw new BadSecretKeyException(ErrorMessage.BAD_SECRET_KEY);
         }
     }
 
