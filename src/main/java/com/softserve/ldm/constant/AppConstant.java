@@ -4,7 +4,6 @@ import lombok.experimental.UtilityClass;
 
 @UtilityClass
 public class AppConstant {
-    public static final String DOTENV_FILENAME = "secretKeys.env";
     public static final String VALID_TABLE_NAME_REGEX = "^(?!_)[a-z]+(?:_[a-z]+){0,10}(?<!_)$";
     public static final String TABLE_NAME = "TABLE_NAME";
     public static final String COLUMN_NAME = "COLUMN_NAME";

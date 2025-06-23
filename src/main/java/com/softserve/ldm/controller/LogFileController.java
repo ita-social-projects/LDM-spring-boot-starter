@@ -138,28 +138,4 @@ public class LogFileController {
                         "attachment; filename=\"" + logFileService.sanitizeFilename(filename) + "\"")
                 .body(logFileService.generateDownloadLogFileUrl(logFileService.sanitizeFilename(filename), secretKey));
     }
-
-    /**
-     * Deletes the <code>.env</code> file from the application directory.
-     * <p>
-     * This may disable certain features that rely on environment variables.
-     *
-     * @param secretKey Secret key required for authorization
-     * @return HTTP 200 OK response if the file was successfully deleted
-     */
-    @Operation(summary = "deletes '.env' file to make functionality that is dependent on it unavailable")
-    @ApiResponses(value = {
-            @ApiResponse(responseCode = "200", description = HttpStatuses.OK,
-                    content = @Content(schema = @Schema(example = HttpStatuses.OK))),
-            @ApiResponse(responseCode = "401", description = HttpStatuses.UNAUTHORIZED,
-                    content = @Content(examples = @ExampleObject(HttpStatuses.UNAUTHORIZED))),
-            @ApiResponse(responseCode = "403", description = HttpStatuses.FORBIDDEN,
-                    content = @Content(examples = @ExampleObject(HttpStatuses.FORBIDDEN)))
-    })
-    @DeleteMapping("/delete-dotenv")
-    public ResponseEntity<Object> deleteDotenvFile(
-            @RequestHeader(name = "Secret-Key") String secretKey) {
-        dotenvService.deleteDotenvFile(secretKey);
-        return ResponseEntity.ok().build();
-    }
 }

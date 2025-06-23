@@ -115,15 +115,4 @@ class LogFileControllerTest {
                 "attachment; filename=\"" + logFileService.sanitizeFilename(filename) + "\""))
             .andExpect(content().bytes(fileContent));
     }
-
-    @Test
-    void deleteDotenvFileShouldReturnOkWhenFileIsDeletedTest() throws Exception {
-
-        doNothing().when(dotenvService).deleteDotenvFile(LogFileControllerTest.SECRET_KEY);
-
-        mockMvc.perform(delete(DELETE_DOTENV_FILE_LINK)
-            .contentType(MediaType.TEXT_PLAIN)
-            .header("Secret-Key", LogFileControllerTest.SECRET_KEY))
-            .andExpect(status().isOk());
-    }
 }

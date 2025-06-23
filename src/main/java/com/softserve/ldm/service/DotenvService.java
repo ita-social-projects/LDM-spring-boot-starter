@@ -8,12 +8,4 @@ public interface DotenvService {
      * @author Hrenevych Ivan
      */
     void validateSecretKey(String secretKey);
-
-    /**
-     * deletes '.env' file to make functionality that is dependent on it
-     * unavailable.
-     *
-     * @author Hrenevych Ivan
-     */
-    void deleteDotenvFile(String secretKey);
 }
