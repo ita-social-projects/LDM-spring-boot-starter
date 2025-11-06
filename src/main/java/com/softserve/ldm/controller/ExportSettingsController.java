@@ -56,9 +56,9 @@ public class ExportSettingsController {
         @ApiResponse(responseCode = "200", description = HttpStatuses.OK,
             content = @Content(schema = @Schema(implementation = TablesMetadataDto.class))),
         @ApiResponse(responseCode = "401", description = HttpStatuses.UNAUTHORIZED,
-            content = @Content(examples = @ExampleObject(HttpStatuses.UNAUTHORIZED))),
+            content = @Content),
         @ApiResponse(responseCode = "403", description = HttpStatuses.FORBIDDEN,
-            content = @Content(examples = @ExampleObject(HttpStatuses.FORBIDDEN))),
+            content = @Content),
     })
     @GetMapping(value = "/tables", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<TablesMetadataDto> getTablesInfo(
@@ -80,11 +80,11 @@ public class ExportSettingsController {
         @ApiResponse(responseCode = "200", description = HttpStatuses.OK,
             content = @Content(schema = @Schema(implementation = TableRowsDto.class))),
         @ApiResponse(responseCode = "400", description = HttpStatuses.BAD_REQUEST,
-            content = @Content(examples = @ExampleObject(HttpStatuses.BAD_REQUEST))),
+            content = @Content),
         @ApiResponse(responseCode = "401", description = HttpStatuses.UNAUTHORIZED,
-            content = @Content(examples = @ExampleObject(HttpStatuses.UNAUTHORIZED))),
+            content = @Content),
         @ApiResponse(responseCode = "403", description = HttpStatuses.FORBIDDEN,
-            content = @Content(examples = @ExampleObject(HttpStatuses.FORBIDDEN)))
+            content = @Content)
     })
     @GetMapping("/select")
     public ResponseEntity<PageableAdvancedDto<Map<String, String>>> selectFromTable(
@@ -107,11 +107,11 @@ public class ExportSettingsController {
     @ApiResponses(value = {
         @ApiResponse(responseCode = "200", description = HttpStatuses.OK),
         @ApiResponse(responseCode = "400", description = HttpStatuses.BAD_REQUEST,
-            content = @Content(examples = @ExampleObject(HttpStatuses.BAD_REQUEST))),
+            content = @Content),
         @ApiResponse(responseCode = "401", description = HttpStatuses.UNAUTHORIZED,
-            content = @Content(examples = @ExampleObject(HttpStatuses.UNAUTHORIZED))),
+            content = @Content),
         @ApiResponse(responseCode = "403", description = HttpStatuses.FORBIDDEN,
-            content = @Content(examples = @ExampleObject(HttpStatuses.FORBIDDEN))),
+            content = @Content),
     })
     @GetMapping("/download-table-data")
     public ResponseEntity<InputStreamResource> exportTableRowsAsExcel(
@@ -141,9 +141,9 @@ public class ExportSettingsController {
         @ApiResponse(responseCode = "200", description = HttpStatuses.OK,
             content = @Content(schema = @Schema(implementation = EnvironmentDto.class))),
         @ApiResponse(responseCode = "401", description = HttpStatuses.UNAUTHORIZED,
-            content = @Content(examples = @ExampleObject(HttpStatuses.UNAUTHORIZED))),
+            content = @Content),
         @ApiResponse(responseCode = "403", description = HttpStatuses.FORBIDDEN,
-            content = @Content(examples = @ExampleObject(HttpStatuses.FORBIDDEN))),
+            content = @Content),
     })
     @GetMapping("/env")
     public ResponseEntity<EnvironmentDto> getEnvVariables(@RequestHeader(name = "Secret-Key") String secretKey) {
