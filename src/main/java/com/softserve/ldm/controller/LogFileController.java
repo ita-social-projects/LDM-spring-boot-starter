@@ -61,11 +61,11 @@ public class LogFileController {
             @ApiResponse(responseCode = "200", description = HttpStatuses.OK,
                     content = @Content(schema = @Schema(example = LogFileMetadataDto.defaultJson))),
             @ApiResponse(responseCode = "401", description = HttpStatuses.UNAUTHORIZED,
-                    content = @Content(examples = @ExampleObject(HttpStatuses.UNAUTHORIZED))),
+                    content = @Content),
             @ApiResponse(responseCode = "403", description = HttpStatuses.FORBIDDEN,
-                    content = @Content(examples = @ExampleObject(HttpStatuses.FORBIDDEN))),
+                    content = @Content),
             @ApiResponse(responseCode = "404", description = HttpStatuses.NOT_FOUND,
-                    content = @Content(examples = @ExampleObject(HttpStatuses.NOT_FOUND)))
+                    content = @Content)
     })
     @ApiPageable
     @PostMapping
@@ -93,13 +93,13 @@ public class LogFileController {
             @ApiResponse(responseCode = "200", description = HttpStatuses.OK,
                     content = @Content(schema = @Schema(example = "string"))),
             @ApiResponse(responseCode = "401", description = HttpStatuses.UNAUTHORIZED,
-                    content = @Content(examples = @ExampleObject(HttpStatuses.UNAUTHORIZED))),
+                    content = @Content),
             @ApiResponse(responseCode = "403", description = HttpStatuses.FORBIDDEN,
-                    content = @Content(examples = @ExampleObject(HttpStatuses.FORBIDDEN))),
+                    content = @Content),
             @ApiResponse(responseCode = "404", description = HttpStatuses.NOT_FOUND,
-                    content = @Content(examples = @ExampleObject(HttpStatuses.NOT_FOUND))),
+                    content = @Content),
             @ApiResponse(responseCode = "503", description = HttpStatuses.SERVICE_UNAVAILABLE,
-                    content = @Content(examples = @ExampleObject(HttpStatuses.SERVICE_UNAVAILABLE)))
+                    content = @Content)
     })
     @GetMapping("/view/{filename}")
     public ResponseEntity<String> viewLogFileContent(
@@ -121,11 +121,11 @@ public class LogFileController {
             @ApiResponse(responseCode = "200", description = HttpStatuses.OK,
                     content = @Content(schema = @Schema(example = HttpStatuses.OK))),
             @ApiResponse(responseCode = "401", description = HttpStatuses.UNAUTHORIZED,
-                    content = @Content(examples = @ExampleObject(HttpStatuses.UNAUTHORIZED))),
+                    content = @Content),
             @ApiResponse(responseCode = "403", description = HttpStatuses.FORBIDDEN,
-                    content = @Content(examples = @ExampleObject(HttpStatuses.FORBIDDEN))),
+                    content = @Content),
             @ApiResponse(responseCode = "404", description = HttpStatuses.NOT_FOUND,
-                    content = @Content(examples = @ExampleObject(HttpStatuses.NOT_FOUND)))
+                    content = @Content)
     })
     @GetMapping("/download/{filename}")
     public ResponseEntity<Resource> downloadLogFile(
